@@ -1,5 +1,5 @@
 //
-//  RestaurantClass.swift
+//  accountClass.swift
 //  Veg
 //
 //  Created by Victor Leal Porto de Almeida Arruda on 30/09/2018.
@@ -8,26 +8,28 @@
 
 import Foundation
 
-class Restaurant{
+class Conta{
     
     private var id: String
-    private var name: String
+    private var nome: String
     private var longitude: String
     private var latitude: String
+    private var inscrito: Bool
     
-    init(id: String, name: String, longitude: String, latitude: String) {
+    init(id: String, nome: String, longitude: String, latitude: String) {
         self.id = id
-        self.name = name
+        self.nome = nome
         self.longitude = longitude
         self.latitude = latitude
+        self.inscrito = false
     }
     
     func getId() -> String{
         return id
     }
     
-    func getName() -> String{
-        return name
+    func getNome() -> String{
+        return nome
     }
     
     func getLongitude() -> String{
@@ -37,4 +39,9 @@ class Restaurant{
     func getLatitude() -> String{
         return latitude
     }
+    
+    func ehInscrito() -> Bool{
+        return inscrito
+    }
+    
 }

@@ -7,17 +7,22 @@
 //
 
 import UIKit
+import CoreData
+
+let defaults = UserDefaults.standard
 
 class ViewController: UIViewController {
 
-    var x = Restaurant(id: "a", name: "a", longitude: "a", latitude: "a")
-    var y = Account(id: "a", name: "a", longitude: "a", latitude: "a")
+    var accounts: [Account] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setData()
         
     }
+    
+ 
 
 
 }

@@ -1,5 +1,5 @@
 //
-//  accountClass.swift
+//  RestaurantClass.swift
 //  Veg
 //
 //  Created by Victor Leal Porto de Almeida Arruda on 30/09/2018.
@@ -8,18 +8,20 @@
 
 import Foundation
 
-class Account{
+class Restaurante{
     
     private var id: String
-    private var name: String
+    private var nome: String
     private var longitude: String
     private var latitude: String
+    private var veg: Bool
     
-    init(id: String, name: String, longitude: String, latitude: String) {
+    init(id: String, nome: String, longitude: String, latitude: String, veg: Bool) {
         self.id = id
-        self.name = name
+        self.nome = nome
         self.longitude = longitude
         self.latitude = latitude
+        self.veg = veg
     }
     
     func getId() -> String{
@@ -27,7 +29,7 @@ class Account{
     }
     
     func getName() -> String{
-        return name
+        return nome
     }
     
     func getLongitude() -> String{
@@ -38,4 +40,7 @@ class Account{
         return latitude
     }
     
+    func isVeg() -> Bool{
+        return veg
+    }
 }
