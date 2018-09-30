@@ -8,15 +8,4 @@
 
 import Foundation
 
-class RepositorioConta: IRepositorioContas{
-    
-
-}
-
-class RepositorioRestaurante: IRepositorioRestaurante{
-    
- 
-    
-    
-}
 

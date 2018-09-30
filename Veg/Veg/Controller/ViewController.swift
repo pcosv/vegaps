@@ -13,7 +13,6 @@ let defaults = UserDefaults.standard
 
 class ViewController: UIViewController {
 
-    var accounts: [Account] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
