@@ -10,14 +10,31 @@ import Foundation
 
 class CadastroRestaurante{
     
-    var repositorioR: IRepositorioRestaurante
+    var cadastroRestaurante: IRepositorioRestaurante
     
-    init(repositorioR:IRepositorioRestaurante) {
-        self.repositorioR = repositorioR
+    init(cadastroRestaurante: IRepositorioRestaurante) {
+        self.cadastroRestaurante = cadastroRestaurante
+    }
+    
+    func listarRestaurante(latitude: String, longitude: String) -> [Restaurante]{
+        let x: [Restaurante] = []
+        
+        return x
     }
     
     func inserirRestaurante(restaurante: Restaurante){
-        repositorioR.inserirRestaurante(restaurante: restaurante)
+        
     }
+    
+    func removerRestaurante(restaurante: Restaurante){
+        
+    }
+    
+    func atualizarRestaurante(restaurante: Restaurante){
+        
+    }
+    
+    
+   
     
 }

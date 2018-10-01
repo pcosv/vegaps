@@ -12,9 +12,5 @@ protocol IRepositorioContas {
     func removerConta(conta: Conta)
     func atualizarConta(conta: Conta)
     func existeConta(id: String)
-    func buscarContasProximas(longitude: String, latitude: String, raio: Int) -> [Conta]
-    func ehInscrito() -> Bool
-    
-    // func realizarLogin(login: String, senha: String)
     
 }

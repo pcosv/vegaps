@@ -10,4 +10,10 @@ import Foundation
 
 class ControladorRealizarLogin{
     
+    var cadastroConta: CadastroConta
+    
+    init(cadastroConta: CadastroConta){
+        self.cadastroConta = cadastroConta
+    }
+    
 }

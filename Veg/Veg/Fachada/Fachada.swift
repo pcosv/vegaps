@@ -17,10 +17,15 @@ class Fachada{
     
 
     init(){
-        let fabricaReps: RepositorioFabricaAbstrata = FabricaNSDefaults() as! RepositorioFabricaAbstrata
+        let fabricaReps: RepositorioFabricaAbstrata = FabricaNSDefaults() as RepositorioFabricaAbstrata
         
-        self.controladorLoginFB = fabricaReps.criarRepositorioContas() as! ControladorRealizarLogin
-        self.controladorBuscarRestaurante = fabricaReps.criarRepositorioRestaurantes() as! ControladorBuscarRestaurantes
+        let repContas = fabricaReps.criarRepositorioContas()
+        let repRestaurantes = fabricaReps.criarRepositorioRestaurantes()
+        
+        self.controladorLoginFB = ControladorRealizarLogin(cadastroConta: repContas as! CadastroConta)
+        self.controladorBuscarRestaurante = ControladorBuscarRestaurantes(cadastroRestaurante: repRestaurantes as! CadastroRestaurante)
+        
+        
         
         
         

@@ -10,5 +10,14 @@ import Foundation
 
 class ControladorBuscarRestaurantes{
     
+    var cadastroRestaurante: CadastroRestaurante
+    
+    init(cadastroRestaurante: CadastroRestaurante){
+        self.cadastroRestaurante = cadastroRestaurante
+    }
+    
+    func buscarRestaurantes(latitude: String, longitude: String){
+        
+    }
     
 }

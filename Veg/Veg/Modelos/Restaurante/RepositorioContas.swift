@@ -35,19 +35,6 @@ class RepositorioContas: IRepositorioContas{
         
     }
     
-    func buscarContasProximas(longitude: String, latitude: String, raio: Int) -> [Conta] {
-        
-        let x: [Conta] = []
-        
-        return x
-        
-    }
-    
-    func ehInscrito() -> Bool {
-        
-        return false
-        
-    }
     
     
 }

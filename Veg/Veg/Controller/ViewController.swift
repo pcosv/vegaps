@@ -19,8 +19,6 @@ class ViewController: UIViewController {
         
 
         
-        
-        
         print(defaultsData.array(forKey: "contas") as! [Conta])
         
         
