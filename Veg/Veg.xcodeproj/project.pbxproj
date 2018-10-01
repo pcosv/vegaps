@@ -16,12 +16,19 @@
 		D40C65992160F3290034E3F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40C65972160F3290034E3F6 /* LaunchScreen.storyboard */; };
 		D40C65A2216121040034E3F6 /* Conta.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40C65A1216121040034E3F6 /* Conta.swift */; };
 		D40C65A42161214D0034E3F6 /* Restaurante.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40C65A32161214D0034E3F6 /* Restaurante.swift */; };
-		D40C65AA21612F6B0034E3F6 /* Collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40C65A921612F6B0034E3F6 /* Collections.swift */; };
 		D40C65AD2161467A0034E3F6 /* FabricaAbstrata.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40C65AC2161467A0034E3F6 /* FabricaAbstrata.swift */; };
-		D40C65AF216149A00034E3F6 /* AbstractFactoryRestaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40C65AE216149A00034E3F6 /* AbstractFactoryRestaurant.swift */; };
 		D4CFFA0A21615F460021144D /* IRepositorioContas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFFA0921615F460021144D /* IRepositorioContas.swift */; };
 		D4CFFA0C21615F960021144D /* IRepositorioRestaurante.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFFA0B21615F960021144D /* IRepositorioRestaurante.swift */; };
 		D4CFFA0E216160B80021144D /* IRepositorio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFFA0D216160B80021144D /* IRepositorio.swift */; };
+		D4CFFA1021623A730021144D /* RepositorioContas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFFA0F21623A730021144D /* RepositorioContas.swift */; };
+		D4CFFA1221623AA20021144D /* RepositorioRestaurante.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFFA1121623AA20021144D /* RepositorioRestaurante.swift */; };
+		D4CFFA15216249CA0021144D /* Fachada.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFFA14216249CA0021144D /* Fachada.swift */; };
+		D4CFFA1721624AE70021144D /* CamadaNegócio .swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFFA1621624AE70021144D /* CamadaNegócio .swift */; };
+		D4CFFA1A21626B800021144D /* FabricaConcreta.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFFA1921626B800021144D /* FabricaConcreta.swift */; };
+		D4CFFA1C216273720021144D /* ControladorRealizarLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFFA1B216273720021144D /* ControladorRealizarLogin.swift */; };
+		D4CFFA1E216273F90021144D /* ControladorBuscarRestaurantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFFA1D216273F90021144D /* ControladorBuscarRestaurantes.swift */; };
+		D4CFFA202162752D0021144D /* CadastroConta.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFFA1F2162752D0021144D /* CadastroConta.swift */; };
+		D4CFFA22216275530021144D /* CadastroRestaurante.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFFA21216275530021144D /* CadastroRestaurante.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,12 +43,19 @@
 		D40C659A2160F3290034E3F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D40C65A1216121040034E3F6 /* Conta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conta.swift; sourceTree = "<group>"; };
 		D40C65A32161214D0034E3F6 /* Restaurante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurante.swift; sourceTree = "<group>"; };
-		D40C65A921612F6B0034E3F6 /* Collections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collections.swift; sourceTree = "<group>"; };
 		D40C65AC2161467A0034E3F6 /* FabricaAbstrata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricaAbstrata.swift; sourceTree = "<group>"; };
-		D40C65AE216149A00034E3F6 /* AbstractFactoryRestaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryRestaurant.swift; sourceTree = "<group>"; };
 		D4CFFA0921615F460021144D /* IRepositorioContas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRepositorioContas.swift; sourceTree = "<group>"; };
 		D4CFFA0B21615F960021144D /* IRepositorioRestaurante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRepositorioRestaurante.swift; sourceTree = "<group>"; };
 		D4CFFA0D216160B80021144D /* IRepositorio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRepositorio.swift; sourceTree = "<group>"; };
+		D4CFFA0F21623A730021144D /* RepositorioContas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorioContas.swift; sourceTree = "<group>"; };
+		D4CFFA1121623AA20021144D /* RepositorioRestaurante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorioRestaurante.swift; sourceTree = "<group>"; };
+		D4CFFA14216249CA0021144D /* Fachada.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fachada.swift; sourceTree = "<group>"; };
+		D4CFFA1621624AE70021144D /* CamadaNegócio .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CamadaNegócio .swift"; sourceTree = "<group>"; };
+		D4CFFA1921626B800021144D /* FabricaConcreta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricaConcreta.swift; sourceTree = "<group>"; };
+		D4CFFA1B216273720021144D /* ControladorRealizarLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorRealizarLogin.swift; sourceTree = "<group>"; };
+		D4CFFA1D216273F90021144D /* ControladorBuscarRestaurantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorBuscarRestaurantes.swift; sourceTree = "<group>"; };
+		D4CFFA1F2162752D0021144D /* CadastroConta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroConta.swift; sourceTree = "<group>"; };
+		D4CFFA21216275530021144D /* CadastroRestaurante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroRestaurante.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +88,10 @@
 		D40C658A2160F3260034E3F6 /* Veg */ = {
 			isa = PBXGroup;
 			children = (
+				D4CFFA1821626AE60021144D /* CamadaNegócio */,
+				D4CFFA13216249BB0021144D /* Fachada */,
 				D4CFFA0621615CAA0021144D /* Controller */,
-				D40C65A5216125380034E3F6 /* Factory */,
+				D40C65A5216125380034E3F6 /* Fabricas */,
 				D40C65A0216120CC0034E3F6 /* Modelos */,
 				D40C658B2160F3260034E3F6 /* AppDelegate.swift */,
 				D40C658F2160F3260034E3F6 /* Main.storyboard */,
@@ -84,6 +100,7 @@
 				D40C65972160F3290034E3F6 /* LaunchScreen.storyboard */,
 				D40C659A2160F3290034E3F6 /* Info.plist */,
 				D40C65922160F3260034E3F6 /* Veg.xcdatamodeld */,
+				D4CFFA1621624AE70021144D /* CamadaNegócio .swift */,
 			);
 			path = Veg;
 			sourceTree = "<group>";
@@ -98,14 +115,13 @@
 			path = Modelos;
 			sourceTree = "<group>";
 		};
-		D40C65A5216125380034E3F6 /* Factory */ = {
+		D40C65A5216125380034E3F6 /* Fabricas */ = {
 			isa = PBXGroup;
 			children = (
-				D40C65A921612F6B0034E3F6 /* Collections.swift */,
 				D40C65AC2161467A0034E3F6 /* FabricaAbstrata.swift */,
-				D40C65AE216149A00034E3F6 /* AbstractFactoryRestaurant.swift */,
+				D4CFFA1921626B800021144D /* FabricaConcreta.swift */,
 			);
-			path = Factory;
+			path = Fabricas;
 			sourceTree = "<group>";
 		};
 		D4CFFA0621615CAA0021144D /* Controller */ = {
@@ -121,6 +137,7 @@
 			children = (
 				D40C65A1216121040034E3F6 /* Conta.swift */,
 				D4CFFA0B21615F960021144D /* IRepositorioRestaurante.swift */,
+				D4CFFA1121623AA20021144D /* RepositorioRestaurante.swift */,
 			);
 			path = Conta;
 			sourceTree = "<group>";
@@ -130,8 +147,29 @@
 			children = (
 				D40C65A32161214D0034E3F6 /* Restaurante.swift */,
 				D4CFFA0921615F460021144D /* IRepositorioContas.swift */,
+				D4CFFA0F21623A730021144D /* RepositorioContas.swift */,
 			);
 			path = Restaurante;
+			sourceTree = "<group>";
+		};
+		D4CFFA13216249BB0021144D /* Fachada */ = {
+			isa = PBXGroup;
+			children = (
+				D4CFFA14216249CA0021144D /* Fachada.swift */,
+			);
+			path = Fachada;
+			sourceTree = "<group>";
+		};
+		D4CFFA1821626AE60021144D /* CamadaNegócio */ = {
+			isa = PBXGroup;
+			children = (
+				D4CFFA1B216273720021144D /* ControladorRealizarLogin.swift */,
+				D4CFFA1D216273F90021144D /* ControladorBuscarRestaurantes.swift */,
+				D4CFFA1F2162752D0021144D /* CadastroConta.swift */,
+				D4CFFA21216275530021144D /* CadastroRestaurante.swift */,
+			);
+			name = "CamadaNegócio";
+			path = "CamadaNegócio";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,17 +244,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4CFFA1C216273720021144D /* ControladorRealizarLogin.swift in Sources */,
 				D4CFFA0E216160B80021144D /* IRepositorio.swift in Sources */,
+				D4CFFA1A21626B800021144D /* FabricaConcreta.swift in Sources */,
 				D40C65A2216121040034E3F6 /* Conta.swift in Sources */,
+				D4CFFA202162752D0021144D /* CadastroConta.swift in Sources */,
 				D4CFFA0A21615F460021144D /* IRepositorioContas.swift in Sources */,
 				D40C65A42161214D0034E3F6 /* Restaurante.swift in Sources */,
+				D4CFFA22216275530021144D /* CadastroRestaurante.swift in Sources */,
+				D4CFFA1E216273F90021144D /* ControladorBuscarRestaurantes.swift in Sources */,
 				D40C65942160F3260034E3F6 /* Veg.xcdatamodeld in Sources */,
-				D40C65AA21612F6B0034E3F6 /* Collections.swift in Sources */,
+				D4CFFA15216249CA0021144D /* Fachada.swift in Sources */,
 				D40C658E2160F3260034E3F6 /* ViewController.swift in Sources */,
+				D4CFFA1721624AE70021144D /* CamadaNegócio .swift in Sources */,
+				D4CFFA1221623AA20021144D /* RepositorioRestaurante.swift in Sources */,
 				D4CFFA0C21615F960021144D /* IRepositorioRestaurante.swift in Sources */,
 				D40C658C2160F3260034E3F6 /* AppDelegate.swift in Sources */,
+				D4CFFA1021623A730021144D /* RepositorioContas.swift in Sources */,
 				D40C65AD2161467A0034E3F6 /* FabricaAbstrata.swift in Sources */,
-				D40C65AF216149A00034E3F6 /* AbstractFactoryRestaurant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol AbstractFactoryRepository {
+protocol RepositorioFabricaAbstrata {
     
     func criarRepositorioContas() -> IRepositorioContas
     func criarRepositorioRestaurantes() -> IRepositorioRestaurante

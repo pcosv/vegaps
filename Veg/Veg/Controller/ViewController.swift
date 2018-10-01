@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-let defaults = UserDefaults.standard
+let defaultsData = UserDefaults.standard
 
 class ViewController: UIViewController {
 
@@ -17,7 +17,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setData()
+
+        
+        
+        
+        print(defaultsData.array(forKey: "contas") as! [Conta])
+        
         
     }
     
@@ -26,3 +31,6 @@ class ViewController: UIViewController {
 
 }
 
+
+
+//Trocar ControladorRealizarBusca por ControladorBuscarRestaurantes
