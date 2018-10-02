@@ -23,13 +23,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        
-        //fachada.controladorBuscarRestaurante.cadastroRestaurante.inserirRestaurante(restaurante: Restaurante(id: "aa", nome: "aa", longitude: "aa", latitude: "aa", veg: false))
+         //   fachada.inserirRestaurante(restaurante: Restaurante(id: "aa", nome: "aa", longitude: "aa", latitude: "aa", veg: false))
         
         
     
         
-        print(defaultsData.array(forKey: "restaurantes") as? [Restaurante] ?? "EITA")
+        //print(defaultsData.array(forKey: "restaurantes") as? [Restaurante] ?? "EITA")
 
         
         

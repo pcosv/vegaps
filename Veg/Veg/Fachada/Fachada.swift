@@ -31,6 +31,27 @@ class Fachada{
         
     }
     
+    func realizarLogin(login: String, senha: String){
+        
+        
+    }
+    
+    func buscarRestaurante(latitude: String, longitude: String) -> [Restaurante]{
+        return controladorBuscarRestaurante.buscarRestaurantes(latitude: latitude, longitude: longitude)
+    }
+    
+    func inserirRestaurante(restaurante: Restaurante){
+        controladorBuscarRestaurante.inserirRestaurante(restaurante: restaurante)
+    }
+    
+    func removerRestaurante(restaurante: Restaurante){
+        controladorBuscarRestaurante.removerRestaurante(restaurante: restaurante)
+    }
+    
+    func atualizarRestaurante(restaurante: Restaurante){
+        controladorBuscarRestaurante.atualizarRestaurante(restaurante: restaurante)
+    }
+    
     
     
 }
