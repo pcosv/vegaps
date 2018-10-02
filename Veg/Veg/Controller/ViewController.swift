@@ -14,15 +14,15 @@ let defaultsData = UserDefaults.standard
 
 class ViewController: UIViewController {
 
+    var fachada = Fachada.shared
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         //print(defaultsData.array(forKey: "contas") as! [Conta])
-        
+
         
     }
     @IBAction func registrarPressed(_ sender: Any) {
@@ -48,5 +48,3 @@ class ViewController: UIViewController {
 }
 
 
-
-//Trocar ControladorRealizarBusca por ControladorBuscarRestaurantes

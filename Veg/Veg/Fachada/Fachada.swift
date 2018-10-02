@@ -10,26 +10,46 @@ import Foundation
 
 class Fachada{
     
-    //var fabrica: AbstractFactoryRepository = FabricaA.shared
-    
+    static var shared = Fachada()
+
     var controladorLoginFB: ControladorRealizarLogin
     var controladorBuscarRestaurante: ControladorBuscarRestaurantes
     
-
-    init(){
+    private init(){
         let fabricaReps: RepositorioFabricaAbstrata = FabricaNSDefaults() as RepositorioFabricaAbstrata
         
         let repContas = fabricaReps.criarRepositorioContas()
         let repRestaurantes = fabricaReps.criarRepositorioRestaurantes()
         
-        self.controladorLoginFB = ControladorRealizarLogin(cadastroConta: repContas as! CadastroConta)
-        self.controladorBuscarRestaurante = ControladorBuscarRestaurantes(cadastroRestaurante: repRestaurantes as! CadastroRestaurante)
+        self.controladorLoginFB = ControladorRealizarLogin(cadastroConta: repContas)
+        self.controladorBuscarRestaurante = ControladorBuscarRestaurantes(cadastroRestaurante: repRestaurantes)
         
         
+    }
+    
+    func network(){
+        
+    }
+    
+    func realizarLogin(login: String, senha: String){
         
         
-        
-        
+    }
+    
+    func buscarRestaurante(latitude: String, longitude: String) -> [Restaurante]{
+        return controladorBuscarRestaurante.buscarRestaurantes(latitude: latitude, longitude: longitude)
+    }
+    
+    func inserirRestaurante(restaurante: Restaurante){
+        controladorBuscarRestaurante.inserirRestaurante(restaurante: restaurante)
+    }
+    
+    func removerRestaurante(restaurante: Restaurante){
+        controladorBuscarRestaurante.removerRestaurante(restaurante: restaurante)
+    }
+    
+    func atualizarRestaurante(restaurante: Restaurante){
+        controladorBuscarRestaurante.atualizarRestaurante(restaurante: restaurante)
     }
     
     

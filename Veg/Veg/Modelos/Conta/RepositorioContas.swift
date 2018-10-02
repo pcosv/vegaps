@@ -15,11 +15,8 @@ class RepositorioContas: IRepositorioContas{
     }
     
     func inserirConta(conta: Conta) {
-        var contas: [Conta] = defaultsData.array(forKey: "contas") as! [Conta]
-        
-        contas.append(Conta(id: "aa", nome: "aa", longitude: "s", latitude: "s"))
-        
-        defaultsData.set(contas, forKey: "contas")
+        self.contas.append(conta)
+        //defaultsData.set(contas, forKey: "contas")
         
     }
     

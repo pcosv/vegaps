@@ -8,6 +8,13 @@
 import Firebase
 
 class RepositorioRestaurante: IRepositorioRestaurante{
+    
+    var restaurantes: [Restaurante]
+    
+    init() {
+        self.restaurantes = defaultsData.array(forKey: "restaurantes") as? [Restaurante] ?? []
+    }
+    
     func inserirRestaurante(restaurante: Restaurante) {
         let restauranteDB = Database.database().reference().child("Restaurantes")
         
@@ -25,6 +32,15 @@ class RepositorioRestaurante: IRepositorioRestaurante{
             }
         }
         
+        
+        
+        
+        self.restaurantes.append(restaurante)
+        print(self.restaurantes[0].getName())
+        print(121212121212)
+        
+        
+        defaultsData.set(self.restaurantes, forKey: "restaurantes")
     }
     
     func removerRestaurante(restaurante: Restaurante) {
