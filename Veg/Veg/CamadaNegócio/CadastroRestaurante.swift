@@ -23,7 +23,7 @@ class CadastroRestaurante{
     }
     
     func inserirRestaurante(restaurante: Restaurante){
-        
+        self.cadastroRestaurante.inserirRestaurante(restaurante: restaurante)
     }
     
     func removerRestaurante(restaurante: Restaurante){

@@ -12,12 +12,24 @@ class ControladorBuscarRestaurantes{
     
     var cadastroRestaurante: CadastroRestaurante
     
-    init(cadastroRestaurante: CadastroRestaurante){
-        self.cadastroRestaurante = cadastroRestaurante
+    init(cadastroRestaurante: IRepositorioRestaurante){
+        self.cadastroRestaurante = CadastroRestaurante(cadastroRestaurante: cadastroRestaurante)
     }
     
-    func buscarRestaurantes(latitude: String, longitude: String){
-        
+    func buscarRestaurantes(latitude: String, longitude: String) -> [Restaurante]{
+        return cadastroRestaurante.listarRestaurante(latitude: latitude, longitude: longitude)
+    }
+    
+    func inserirRestaurante(restaurante: Restaurante){
+        cadastroRestaurante.inserirRestaurante(restaurante: restaurante)
+    }
+    
+    func removerRestaurante(restaurante: Restaurante){
+        cadastroRestaurante.removerRestaurante(restaurante: restaurante)
+    }
+    
+    func atualizarRestaurante(restaurante: Restaurante){
+        cadastroRestaurante.atualizarRestaurante(restaurante: restaurante)
     }
     
 }

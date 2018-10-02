@@ -12,8 +12,8 @@ class ControladorRealizarLogin{
     
     var cadastroConta: CadastroConta
     
-    init(cadastroConta: CadastroConta){
-        self.cadastroConta = cadastroConta
+    init(cadastroConta: IRepositorioContas){
+        self.cadastroConta = CadastroConta(cadastroConta: cadastroConta)
     }
     
 }
