@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         
         
         
+
         
     }
     @IBAction func registrarPressed(_ sender: Any) {
