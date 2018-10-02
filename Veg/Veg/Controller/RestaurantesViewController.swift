@@ -21,7 +21,7 @@ class RestaurantesViewController: UIViewController, UITableViewDelegate, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        restaurantes = fachada.buscarRestaurante(latitude: "0", longitude: "0")
+        //restaurantes = fachada.buscarRestaurante(latitude: "0", longitude: "0")
 
   
  

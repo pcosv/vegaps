@@ -23,9 +23,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-         //   fachada.inserirRestaurante(restaurante: Restaurante(id: "aa", nome: "aa", longitude: "aa", latitude: "aa", veg: false))
-        
-        
         
 
         

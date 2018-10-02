@@ -57,7 +57,7 @@ class RepositorioRestaurante: IRepositorioRestaurante{
         
         
         restauranteDB.observe(.childAdded) { (snapshot) in
-            let snapshotValue = snapshot.value as! Dictionary<String, String>
+            let snapshotValue = snapshot.value as! Dictionary<String,String>
             
             let nome = snapshotValue["Nome"]
             let veg = snapshotValue["Veg"]
