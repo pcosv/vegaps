@@ -26,11 +26,6 @@ class ViewController: UIViewController {
          //   fachada.inserirRestaurante(restaurante: Restaurante(id: "aa", nome: "aa", longitude: "aa", latitude: "aa", veg: false))
         
         
-    
-        
-        //print(defaultsData.array(forKey: "restaurantes") as? [Restaurante] ?? "EITA")
-
-        
         
         
     }
