@@ -8,25 +8,45 @@
 
 import UIKit
 import CoreData
+import Firebase
 
 let defaultsData = UserDefaults.standard
 
 class ViewController: UIViewController {
 
     
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
 
         
-        print(defaultsData.array(forKey: "contas") as! [Conta])
+        //print(defaultsData.array(forKey: "contas") as! [Conta])
         
         
     }
+    @IBAction func registrarPressed(_ sender: Any) {
+        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+            if error != nil {
+                print(error!)
+            } else {
+                // success registration
+            }
+        }
+    }
     
- 
-
-
+    @IBAction func loginPressed(_ sender: Any) {
+        Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+            if error != nil {
+                print(error!)
+            } else {
+                // success sign in
+            }
+        }
+    }
+    
 }
 
 
