@@ -8,12 +8,16 @@
 
 import UIKit
 import CoreData
+import Firebase
 
 let defaultsData = UserDefaults.standard
 
 class ViewController: UIViewController {
 
     var fachada = Fachada.shared
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,12 +34,27 @@ class ViewController: UIViewController {
         
         
         
-        
+    }
+    @IBAction func registrarPressed(_ sender: Any) {
+        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+            if error != nil {
+                print(error!)
+            } else {
+                // success registration
+            }
+        }
     }
     
- 
-
-
+    @IBAction func loginPressed(_ sender: Any) {
+        Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+            if error != nil {
+                print(error!)
+            } else {
+                // success sign in
+            }
+        }
+    }
+    
 }
 
 
