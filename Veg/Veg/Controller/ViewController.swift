@@ -21,8 +21,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        
         //print(defaultsData.array(forKey: "contas") as! [Conta])
         
         
