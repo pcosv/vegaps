@@ -15,6 +15,8 @@ class RestaurantesViewController: UIViewController, UITableViewDelegate, UITable
     
     @IBOutlet weak var restaurantesTableView: UITableView!
     @IBOutlet weak var labelGetNome: UITextField!
+    @IBOutlet weak var userName: UILabel!
+    var email: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +27,8 @@ class RestaurantesViewController: UIViewController, UITableViewDelegate, UITable
  
         restaurantesTableView.delegate = self
         restaurantesTableView.dataSource = self
+        
+        userName.text = email
         
         
     }

@@ -18,7 +18,8 @@ class RepositorioRestaurante: IRepositorioRestaurante{
     func inserirRestaurante(restaurante: Restaurante) {
         let restauranteDB = Database.database().reference().child("Restaurantes")
         
-        let restauranteData = ["Nome" : restaurante.getName(),
+        let restauranteData = ["Id" : restaurante.getId(),
+                               "Nome" : restaurante.getName(),
                                "Longitude" : restaurante.getLongitude(),
                                "Latitude": restaurante.getLatitude(),
                                "Veg" : restaurante.isVeg()] as [String : Any]
@@ -36,11 +37,7 @@ class RepositorioRestaurante: IRepositorioRestaurante{
         
         
         self.restaurantes.append(restaurante)
-        print(self.restaurantes[0].getName())
-        print(121212121212)
-        
-        
-        defaultsData.set(self.restaurantes, forKey: "restaurantes")
+       
     }
     
     func removerRestaurante(restaurante: Restaurante) {
@@ -52,16 +49,28 @@ class RepositorioRestaurante: IRepositorioRestaurante{
     }
     
     func buscarRestaurantes(longitudeUsuario: String, latitudeUsuario: String) -> [Restaurante] {
+        
+        var restaurantes: [Restaurante] = []
+        
         let restauranteDB = Database.database().reference().child("Restaurantes")
         
-        restauranteDB.observe(.childAdded, with: { (snapshot) in
+        
+        
+        restauranteDB.observe(.childAdded) { (snapshot) in
             let snapshotValue = snapshot.value as! Dictionary<String, String>
             
-            print(snapshot)
-        })
-        let x: [Restaurante] = []
-
-        return x
+            let nome = snapshotValue["Nome"]
+            let veg = snapshotValue["Veg"]
+            let latitude = snapshotValue["Latitude"]
+            let longitude = snapshotValue["Longitude"]
+            
+          
+            restaurantes.append(Restaurante(id: "001", nome: nome!, longitude: longitude!, latitude: latitude!, veg: Bool(veg!) ?? false))
+            
+        }
+        
+    
+        return restaurantes
     }
     
    

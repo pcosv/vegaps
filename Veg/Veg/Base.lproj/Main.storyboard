@@ -116,6 +116,13 @@
                                     <action selector="salvarRestaurante:" destination="8b9-L3-Weu" eventType="touchUpInside" id="3he-4n-5iT"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UserName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhq-Et-P3V">
+                                <rect key="frame" x="57" y="20" width="260" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.9882352941176471" green="0.97254901960784312" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="gly-dR-SrY"/>
@@ -123,6 +130,7 @@
                     <connections>
                         <outlet property="labelGetNome" destination="zPH-vp-JEg" id="h82-rQ-s9y"/>
                         <outlet property="restaurantesTableView" destination="Fjo-IH-xrQ" id="8Cb-ZO-ycM"/>
+                        <outlet property="userName" destination="Nhq-Et-P3V" id="xAa-a9-AK9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oSM-Cl-IHR" userLabel="First Responder" sceneMemberID="firstResponder"/>
