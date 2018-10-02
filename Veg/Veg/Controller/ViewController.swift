@@ -45,7 +45,7 @@ class ViewController: UIViewController {
             if error != nil {
                 print(error!)
             } else {
-                // success sign in
+                self.performSegue(withIdentifier: "loginToRestaurantes", sender: nil)
             }
         }
     }

@@ -31,6 +31,8 @@
 		D4CFFA1E216273F90021144D /* ControladorBuscarRestaurantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFFA1D216273F90021144D /* ControladorBuscarRestaurantes.swift */; };
 		D4CFFA202162752D0021144D /* CadastroConta.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFFA1F2162752D0021144D /* CadastroConta.swift */; };
 		D4CFFA22216275530021144D /* CadastroRestaurante.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFFA21216275530021144D /* CadastroRestaurante.swift */; };
+		D4CFFA24216312830021144D /* RestaurantesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFFA23216312830021144D /* RestaurantesViewController.swift */; };
+		D4CFFA272163140C0021144D /* RestauranteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFFA262163140C0021144D /* RestauranteTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,8 @@
 		D4CFFA1D216273F90021144D /* ControladorBuscarRestaurantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorBuscarRestaurantes.swift; sourceTree = "<group>"; };
 		D4CFFA1F2162752D0021144D /* CadastroConta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroConta.swift; sourceTree = "<group>"; };
 		D4CFFA21216275530021144D /* CadastroRestaurante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroRestaurante.swift; sourceTree = "<group>"; };
+		D4CFFA23216312830021144D /* RestaurantesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantesViewController.swift; sourceTree = "<group>"; };
+		D4CFFA262163140C0021144D /* RestauranteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranteTableViewCell.swift; sourceTree = "<group>"; };
 		D4F48D52E40F670FDA108EF8 /* Pods_Veg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Veg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -114,6 +118,7 @@
 		D40C658A2160F3260034E3F6 /* Veg */ = {
 			isa = PBXGroup;
 			children = (
+				D4CFFA25216313E90021144D /* Modelos da Interface */,
 				D4CFFA1821626AE60021144D /* CamadaNegócio */,
 				D4CFFA13216249BB0021144D /* Fachada */,
 				D4CFFA0621615CAA0021144D /* Controller */,
@@ -155,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				D40C658D2160F3260034E3F6 /* ViewController.swift */,
+				D4CFFA23216312830021144D /* RestaurantesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -197,6 +203,14 @@
 			);
 			name = "CamadaNegócio";
 			path = "CamadaNegócio";
+			sourceTree = "<group>";
+		};
+		D4CFFA25216313E90021144D /* Modelos da Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D4CFFA262163140C0021144D /* RestauranteTableViewCell.swift */,
+			);
+			path = "Modelos da Interface";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,10 +342,12 @@
 				D40C65A42161214D0034E3F6 /* Restaurante.swift in Sources */,
 				D4CFFA22216275530021144D /* CadastroRestaurante.swift in Sources */,
 				D4CFFA1E216273F90021144D /* ControladorBuscarRestaurantes.swift in Sources */,
+				D4CFFA24216312830021144D /* RestaurantesViewController.swift in Sources */,
 				D40C65942160F3260034E3F6 /* Veg.xcdatamodeld in Sources */,
 				D4CFFA15216249CA0021144D /* Fachada.swift in Sources */,
 				D40C658E2160F3260034E3F6 /* ViewController.swift in Sources */,
 				D4CFFA1721624AE70021144D /* CamadaNegócio .swift in Sources */,
+				D4CFFA272163140C0021144D /* RestauranteTableViewCell.swift in Sources */,
 				D4CFFA1221623AA20021144D /* RepositorioRestaurante.swift in Sources */,
 				D4CFFA0C21615F960021144D /* IRepositorioRestaurante.swift in Sources */,
 				D40C658C2160F3260034E3F6 /* AppDelegate.swift in Sources */,

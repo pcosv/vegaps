@@ -17,9 +17,7 @@ class CadastroRestaurante{
     }
     
     func listarRestaurante(latitude: String, longitude: String) -> [Restaurante]{
-        let x: [Restaurante] = []
-        
-        return x
+        return self.cadastroRestaurante.buscarRestaurantes(longitudeUsuario: latitude, latitudeUsuario:longitude)
     }
     
     func inserirRestaurante(restaurante: Restaurante){
@@ -27,11 +25,11 @@ class CadastroRestaurante{
     }
     
     func removerRestaurante(restaurante: Restaurante){
-        
+        self.cadastroRestaurante.removerRestaurante(restaurante: restaurante)
     }
     
     func atualizarRestaurante(restaurante: Restaurante){
-        
+        self.atualizarRestaurante(restaurante: restaurante)
     }
     
     

@@ -21,10 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         
         //referencia pro banco
-        let myDatabase =  Database.database().reference()
+        //let myDatabase =  Database.database().reference()
         
         //setando valor no banco
-        myDatabase.setValue("quando o app roda ele seta isso")
+        //myDatabase.setValue("quando o app roda ele seta isso")
         return true
     }
 
