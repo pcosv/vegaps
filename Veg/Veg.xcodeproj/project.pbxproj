@@ -33,6 +33,7 @@
 		D4CFFA22216275530021144D /* CadastroRestaurante.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFFA21216275530021144D /* CadastroRestaurante.swift */; };
 		D4CFFA24216312830021144D /* RestaurantesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFFA23216312830021144D /* RestaurantesViewController.swift */; };
 		D4CFFA272163140C0021144D /* RestauranteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFFA262163140C0021144D /* RestauranteTableViewCell.swift */; };
+		D4CFFA292165460E0021144D /* CadastrarRestauranteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFFA282165460E0021144D /* CadastrarRestauranteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		D4CFFA21216275530021144D /* CadastroRestaurante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroRestaurante.swift; sourceTree = "<group>"; };
 		D4CFFA23216312830021144D /* RestaurantesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantesViewController.swift; sourceTree = "<group>"; };
 		D4CFFA262163140C0021144D /* RestauranteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranteTableViewCell.swift; sourceTree = "<group>"; };
+		D4CFFA282165460E0021144D /* CadastrarRestauranteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastrarRestauranteViewController.swift; sourceTree = "<group>"; };
 		D4F48D52E40F670FDA108EF8 /* Pods_Veg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Veg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -161,6 +163,7 @@
 			children = (
 				D40C658D2160F3260034E3F6 /* ViewController.swift */,
 				D4CFFA23216312830021144D /* RestaurantesViewController.swift */,
+				D4CFFA282165460E0021144D /* CadastrarRestauranteViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				D4CFFA1A21626B800021144D /* FabricaConcreta.swift in Sources */,
 				D40C65A2216121040034E3F6 /* Conta.swift in Sources */,
 				D4CFFA202162752D0021144D /* CadastroConta.swift in Sources */,
+				D4CFFA292165460E0021144D /* CadastrarRestauranteViewController.swift in Sources */,
 				D4CFFA0A21615F460021144D /* IRepositorioContas.swift in Sources */,
 				D40C65A42161214D0034E3F6 /* Restaurante.swift in Sources */,
 				D4CFFA22216275530021144D /* CadastroRestaurante.swift in Sources */,

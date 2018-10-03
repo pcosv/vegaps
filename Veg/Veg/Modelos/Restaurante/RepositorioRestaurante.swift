@@ -65,7 +65,7 @@ class RepositorioRestaurante: IRepositorioRestaurante{
             let longitude = snapshotValue["Longitude"]
             
           
-            restaurantes.append(Restaurante(id: "001", nome: nome!, longitude: longitude!, latitude: latitude!, veg: Bool(veg!) ?? false))
+            restaurantes.append(Restaurante(id: "001", nome: nome!, longitude: Double(longitude!)!, latitude: Double(latitude!)!, veg: Bool(veg!) ?? false))
             
         }
         

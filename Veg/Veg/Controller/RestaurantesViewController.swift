@@ -25,9 +25,9 @@ class RestaurantesViewController: UIViewController, UITableViewDelegate, UITable
        
 
         //restaurantes = fachada.buscarRestaurante(latitude: "0", longitude: "0")
-        restaurantes.append(Restaurante(id: "1", nome: "aa", longitude: "1", latitude: "1", veg: true))
-        restaurantes.append(Restaurante(id: "11", nome: "bb", longitude: "11", latitude: "11", veg: false))
-        restaurantes.append(Restaurante(id: "111", nome: "bb", longitude: "111", latitude: "111", veg: true))
+        restaurantes.append(Restaurante(id: "1", nome: "aa", longitude: -34.923857 , latitude: -8.0288491, veg: true))
+        restaurantes.append(Restaurante(id: "11", nome: "bb", longitude:  -34.9051156, latitude: -8.0467489, veg: false))
+        restaurantes.append(Restaurante(id: "111", nome: "cc", longitude:  -34.9052988, latitude: -8.0826188, veg: true))
 
  
         restaurantesTableView.delegate = self
@@ -35,6 +35,10 @@ class RestaurantesViewController: UIViewController, UITableViewDelegate, UITable
         
         userName.text = Auth.auth().currentUser?.email
         
+        
+        restaurantesTableView.layer.cornerRadius = 10
+        restaurantesTableView.layer.borderWidth = 1
+        restaurantesTableView.layer.borderColor = #colorLiteral(red: 0.3215686275, green: 0.5254901961, blue: 0.5411764706, alpha: 1)
         
     }
 
@@ -47,23 +51,21 @@ class RestaurantesViewController: UIViewController, UITableViewDelegate, UITable
         let cell = restaurantesTableView.dequeueReusableCell(withIdentifier: "restauranteTableViewCell", for: indexPath) as! RestauranteTableViewCell
         
         cell.nome.text = restaurantes[indexPath.row].getName()
+        cell.isVeg.text = restaurantes[indexPath.row].isVeg() ? "Vegano" : "Vegetariano"
+        cell.latitude = restaurantes[indexPath.row].getLatitude()
+        cell.longitude = restaurantes[indexPath.row].getLongitude()
 
         return cell
         
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140
+        return 120
     }
     
 
     @IBAction func salvarRestaurante(_ sender: UIButton) {
-        fachada.inserirRestaurante(restaurante: Restaurante(id: "00001", nome: labelGetNome.text!, longitude: "00003", latitude: "00003", veg: false))
-        
-       // popupCadastro.isHidden = true
-        labelGetNome.text = ""
-
-        restaurantesTableView.reloadData()
+        performSegue(withIdentifier: "restaurantesToCadastro", sender: nil)
     }
     
 
