@@ -55,7 +55,7 @@ class RepositorioRestaurante: IRepositorioRestaurante{
         let restauranteDB = Database.database().reference().child("Restaurantes")
         
         
-        
+        print("aaaaaaaaaaa")
         restauranteDB.observe(.childAdded) { (snapshot) in
             let snapshotValue = snapshot.value as! Dictionary<String,String>
             

@@ -46,14 +46,7 @@ class ViewController: UIViewController {
             }
         }
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "loginToRestaurantes"{
-            let restaurantesViewController: RestaurantesViewController = segue.destination as! RestaurantesViewController
-            restaurantesViewController.email = emailTextField.text!
-        }
-    }
-    
+
 }
 
 

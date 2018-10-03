@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         
+        
+        
         //referencia pro banco
         //let myDatabase =  Database.database().reference()
         
