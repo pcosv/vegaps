@@ -50,27 +50,33 @@ class RepositorioRestaurante: IRepositorioRestaurante{
     
     func buscarRestaurantes(longitudeUsuario: String, latitudeUsuario: String) -> [Restaurante] {
         
-        var restaurantes: [Restaurante] = []
+       // func buscarRestaurantes(longitudeUsuario: String, latitudeUsuario: String, completion: @escaping (([Restaurante])->())) {
+        
+        
+        //self.restaurantes = []
         
         let restauranteDB = Database.database().reference().child("Restaurantes")
         
         
-        print("aaaaaaaaaaa")
         restauranteDB.observe(.childAdded) { (snapshot) in
             let snapshotValue = snapshot.value as! Dictionary<String,String>
             
             let nome = snapshotValue["Nome"]
+            
             let veg = snapshotValue["Veg"]
             let latitude = snapshotValue["Latitude"]
             let longitude = snapshotValue["Longitude"]
-            
+
           
-            restaurantes.append(Restaurante(id: "001", nome: nome!, longitude: Double(longitude!)!, latitude: Double(latitude!)!, veg: Bool(veg!) ?? false))
+            self.restaurantes.append(Restaurante(id: "001", nome: nome!, longitude: longitude!, latitude: latitude!, veg: veg!))
+            
+            NotificationCenter.default.post(name: Notification.Name("NotificationIdentifier"), object: nil)
+
             
         }
         
     
-        return restaurantes
+        return self.restaurantes
     }
     
    

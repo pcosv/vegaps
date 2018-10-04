@@ -13,11 +13,11 @@ class Restaurante{
     
     private var id: String
     private var nome: String
-    private var longitude: CLLocationDegrees
-    private var latitude: CLLocationDegrees
-    private var veg: Bool
+    private var longitude: String
+    private var latitude: String
+    private var veg: String
     
-    init(id: String, nome: String, longitude: CLLocationDegrees, latitude: CLLocationDegrees, veg: Bool) {
+    init(id: String, nome: String, longitude: String, latitude: String, veg: String) {
         self.id = id
         self.nome = nome
         self.longitude = longitude
@@ -33,15 +33,15 @@ class Restaurante{
         return nome
     }
     
-    func getLongitude() -> CLLocationDegrees{
+    func getLongitude() -> String{
         return longitude
     }
     
-    func getLatitude() -> CLLocationDegrees{
+    func getLatitude() -> String{
         return latitude
     }
     
-    func isVeg() -> Bool{
+    func isVeg() -> String{
         return veg
     }
 }
