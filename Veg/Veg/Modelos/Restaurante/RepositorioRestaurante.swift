@@ -34,9 +34,9 @@ class RepositorioRestaurante: IRepositorioRestaurante{
         }
         
         
-        
-        
         self.restaurantes.append(restaurante)
+        
+        try? UserDefaults.standard.set(PropertyListEncoder().encode(self.restaurantes), forKey: "restaurante")
        
     }
     
@@ -55,7 +55,9 @@ class RepositorioRestaurante: IRepositorioRestaurante{
         
         //self.restaurantes = []
         
-        let restauranteDB = Database.database().reference().child("Restaurantes")
+    
+        
+        /*let restauranteDB = Database.database().reference().child("Restaurantes")
         
         
         restauranteDB.observe(.childAdded) { (snapshot) in
@@ -73,10 +75,14 @@ class RepositorioRestaurante: IRepositorioRestaurante{
             NotificationCenter.default.post(name: Notification.Name("NotificationIdentifier"), object: nil)
 
             
-        }
+        }*/
+        
+        let encoded = UserDefaults.standard.object(forKey: "restaurante") as! [Restaurante]
+        print(encoded)
+      //  let restaurantes = try! PropertyListDecoder().decode(Restaurante.self, from: encoded)
         
     
-        return self.restaurantes
+        return []
     }
     
    

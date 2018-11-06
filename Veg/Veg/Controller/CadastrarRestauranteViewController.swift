@@ -30,7 +30,7 @@ class CadastrarRestauranteViewController: UIViewController, CLLocationManagerDel
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingHeading()
         
-        centerMapOnLocation(location: locationManager.location!)
+      //  centerMapOnLocation(location: locationManager.location!)
         
         
         mapa.layer.cornerRadius = 10

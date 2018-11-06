@@ -45,5 +45,7 @@
 	</array>
 	<key>FirebaseScreenReportingEnabled</key>
 	<false/>
+	<key>configurations</key>
+	<string>Firebase</string>
 </dict>
 </plist>

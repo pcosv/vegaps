@@ -9,7 +9,7 @@
 import Foundation
 import MapKit
 
-class Restaurante{
+class Restaurante: Codable{
     
     private var id: String
     private var nome: String

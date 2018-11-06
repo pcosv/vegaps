@@ -19,6 +19,7 @@
 		D40C65A2216121040034E3F6 /* Conta.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40C65A1216121040034E3F6 /* Conta.swift */; };
 		D40C65A42161214D0034E3F6 /* Restaurante.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40C65A32161214D0034E3F6 /* Restaurante.swift */; };
 		D40C65AD2161467A0034E3F6 /* FabricaAbstrata.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40C65AC2161467A0034E3F6 /* FabricaAbstrata.swift */; };
+		D44F637E2191C93D005417BE /* configurations.plist in Resources */ = {isa = PBXBuildFile; fileRef = D44F637D2191C93D005417BE /* configurations.plist */; };
 		D4CFFA0A21615F460021144D /* IRepositorioContas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFFA0921615F460021144D /* IRepositorioContas.swift */; };
 		D4CFFA0C21615F960021144D /* IRepositorioRestaurante.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFFA0B21615F960021144D /* IRepositorioRestaurante.swift */; };
 		D4CFFA0E216160B80021144D /* IRepositorio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFFA0D216160B80021144D /* IRepositorio.swift */; };
@@ -52,6 +53,7 @@
 		D40C65A1216121040034E3F6 /* Conta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conta.swift; sourceTree = "<group>"; };
 		D40C65A32161214D0034E3F6 /* Restaurante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurante.swift; sourceTree = "<group>"; };
 		D40C65AC2161467A0034E3F6 /* FabricaAbstrata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricaAbstrata.swift; sourceTree = "<group>"; };
+		D44F637D2191C93D005417BE /* configurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = configurations.plist; sourceTree = "<group>"; };
 		D4CFFA0921615F460021144D /* IRepositorioContas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRepositorioContas.swift; sourceTree = "<group>"; };
 		D4CFFA0B21615F960021144D /* IRepositorioRestaurante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRepositorioRestaurante.swift; sourceTree = "<group>"; };
 		D4CFFA0D216160B80021144D /* IRepositorio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRepositorio.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		D40C658A2160F3260034E3F6 /* Veg */ = {
 			isa = PBXGroup;
 			children = (
+				D44F637D2191C93D005417BE /* configurations.plist */,
 				D4CFFA25216313E90021144D /* Modelos da Interface */,
 				D4CFFA1821626AE60021144D /* CamadaNegócio */,
 				D4CFFA13216249BB0021144D /* Fachada */,
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D40C65992160F3290034E3F6 /* LaunchScreen.storyboard in Resources */,
+				D44F637E2191C93D005417BE /* configurations.plist in Resources */,
 				3820F1B72161608400C916F3 /* facebook.png in Resources */,
 				8E9F1CA72162F062003B7D17 /* GoogleService-Info.plist in Resources */,
 				D40C65962160F3290034E3F6 /* Assets.xcassets in Resources */,

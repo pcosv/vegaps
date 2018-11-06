@@ -21,13 +21,7 @@ class RestaurantesViewController: UIViewController, UITableViewDelegate, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
-
-        
-      //  restaurantes.append(Restaurante(id: "1", nome: "aa", longitude: "-34.923857" , latitude: "-8.0288491", veg: "true"))
-      //  restaurantes.append(Restaurante(id: "11", nome: "bb", longitude:  "-34.9051156", latitude: "-8.0467489", veg: "false"))
-     //   restaurantes.append(Restaurante(id: "111", nome: "cc", longitude:  "-34.9052988", latitude: "-8.0826188", veg: "true"))
-
+    
  
         restaurantesTableView.delegate = self
         restaurantesTableView.dataSource = self

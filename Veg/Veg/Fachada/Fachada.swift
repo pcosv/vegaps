@@ -16,10 +16,24 @@ class Fachada{
     var controladorBuscarRestaurante: ControladorBuscarRestaurantes
     
     private init(){
-        let fabricaReps: RepositorioFabricaAbstrata = FabricaNSDefaults() as RepositorioFabricaAbstrata
         
-        let repContas = fabricaReps.criarRepositorioContas()
-        let repRestaurantes = fabricaReps.criarRepositorioRestaurantes()
+        var fabricaReps: RepositorioFabricaAbstrata? = nil
+
+        
+        if let path = Bundle.main.path(forResource: "configurations", ofType: "plist") {
+            if let dict = NSDictionary(contentsOfFile: path) as? [String: AnyObject] {
+
+                switch dict["repositoryType"] {
+                case "Firebase" as String:
+                    fabricaReps = FabricaNSDefaults() as RepositorioFabricaAbstrata
+                default:
+                    break
+                }
+            }
+        }
+        
+        let repContas = fabricaReps!.criarRepositorioContas()
+        let repRestaurantes = fabricaReps!.criarRepositorioRestaurantes()
         
         self.controladorLoginFB = ControladorRealizarLogin(cadastroConta: repContas)
         self.controladorBuscarRestaurante = ControladorBuscarRestaurantes(cadastroRestaurante: repRestaurantes)
