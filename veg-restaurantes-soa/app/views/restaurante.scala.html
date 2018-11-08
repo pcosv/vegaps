@@ -1,0 +1,24 @@
+@(restaurante: entidades.Restaurante)
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+	<body>
+	<a href="../restaurantes" style="text-decoration: none">< Lista de restaurantes</a>
+
+	<div>
+		<span>Id: @restaurante.getId()</span>
+	</div>
+	<div>
+		<span>Nome: @restaurante.getNome()</span>
+	</div>
+	<div>
+		<span>Latitude: @restaurante.getLatitude()</span>
+	</div>
+	<div>
+		<span>Longitude: @restaurante.getLongitude()</span>
+	</div>
+	</body>
+</html>

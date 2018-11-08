@@ -1,0 +1,10 @@
+@(restaurantes: List[entidades.Restaurante])
+
+<h1>Lista de restaurantes</h1>
+
+@for(restaurante <- restaurantes) {
+    <div class="row-restaurante">
+        <h2><a href="restaurante/@restaurante.getId()">@restaurante.getNome()</a></h2>
+    </div>
+}
+
